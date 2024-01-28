@@ -74,6 +74,32 @@
             border: 2px solid #fff;
             cursor: pointer;
         }
+        .inquiry-box {
+            margin: 20px 50px;
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: #000;
+        }
+
+        .inquiry-box label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .inquiry-box textarea {
+            width: 100%;
+            height: 100px;
+            resize: vertical;
+        }
+
+        .inquiry-box input[type="submit"] {
+            background-color: #570ca2;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +130,22 @@
 
             </address>
         </section>
+         <!-- Inquiry Box -->
+    <div class="inquiry-box">
+        <h2>Send an Inquiry</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit Inquiry">
+        </form>
+    </div>
     </main>
 
     <!-- Button container at the bottom of the page -->
